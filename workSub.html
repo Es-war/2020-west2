@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>workSub</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+<div class="head">
+    <div class="tit">作业提交</div>
+</div>
+<div class="dash_border"></div>
+<form class="content_plus" method="post" enctype="multipart/form-data" action="xx.php">
+    <div class="info">
+        <span class="info_type">1.姓名</span><span class="info_require">*</span>
+        <div>
+            <input type="text" name="userName" id="userName">
+        </div>
+    </div>
+    <div class="info">
+        <span class="info_type">2.学号</span><span class="info_require">*</span>
+        <div >
+            <input type="text" name="userNum" id="userNum">
+        </div>
+    </div>
+    <div class="info">
+        <span class="info_type">3.电话号码</span>
+        <div>
+            <input type="text" name="phoneNum">
+        </div>
+    </div>
+    <div class="info">
+        <span class="info_type">4.作业代号</span><span class="info_require">*</span>
+        <div>
+            <input type="text" name="workId" id="workId">
+        </div>
+    </div>
+    <div class="information">
+        <span class="info_type">5.附件</span><span class="info_require">*</span>
+        <div class="dropbox">
+            <div class="items-container">
+                <div class="close">
+                    <span class="tip">拖拽文件至方框中</span>
+                </div>
+                <div>
+                    <div class="content" id="content">
+                        <table class="table">
+                            <tbody class="tbody"></tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="page"><a href="javascript:;" class="pageNum">1</a></div>
+                <div class="footer">
+                    <button class="clearBtn" onclick='clearAll()'>清空所有</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <input type="submit">
+    </div>
+</form>
+<script src="js/web.js"></script>
+</body>
+</html>
