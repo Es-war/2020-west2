@@ -269,7 +269,7 @@ oContent.ondrop = function (event) {
         $.ajax({
             type: "get",
             url: "xx.php",
-            data: "act=add&filesName="+files[i].name+"filesSize="+size+"&filesTime="+time,
+            data: "act=add&filesName="+files[i].name+"&filesSize="+size+"&filesTime="+time,
             async: true,
             cache: false,
             contentType: false,
